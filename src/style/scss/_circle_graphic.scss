@@ -1,0 +1,45 @@
+.circleGraphic {
+  border-radius: 50%;
+  padding-top: 30%;
+  margin: 30px;
+  width: 30%;
+  min-height: 250px;
+  overflow: hidden;
+  position: relative;
+  animation: reveal 1s ease-in;
+  @include media-md {
+    min-width: 250px;
+    min-height: 250px;
+    font-size: 10px;
+  }
+  @include media-sm {
+    width: 80%;
+    padding-top: 80%;
+    min-width: 175px;
+    min-height: 175px;
+  }
+
+}
+
+.circleGraphicInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 102%; //so that dashed lines aren't visible on top/bottom
+  width: 102%;
+  position: absolute;
+  top: -1%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.ingredientLayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  padding: 3px;
+  border-top: 1px dashed #ededed;
+}

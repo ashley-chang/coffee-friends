@@ -1,0 +1,48 @@
+.info-details {
+  width: 35%;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: white;
+  font-family: $paragraph-font;
+  animation: reveal 1s ease-in;
+  -moz-animation: reveal 1s ease-in;
+  -webkit-animation: reveal 1s ease-in;
+
+  @include media-md {
+    width: 60%;
+  }
+  @include media-sm {
+    width: 100%;
+    order: 1;
+  }
+}
+
+.name {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: $paragraph-font;
+  &:after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    border-top: 1px solid black;
+
+  }
+}
+
+.ingredients {
+  font-style: italic;
+  color: $secondary-color;
+  font-size: 14px;
+  margin: 15px 0;
+  font-family: $paragraph-font;
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 15px;
+  font-family: $paragraph-font;
+}
